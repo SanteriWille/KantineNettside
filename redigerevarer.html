@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Rediger varer</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="left">
+      <a class="logo" href="index.html">Kantine</a>
+    </div>
+    <div class="right">
+      <a href="ukensmeny.html">Ukens meny</a>
+      <a href="øvrigevarer.html">Øvrige varer</a>
+      <a href="redigerevarer.html">Rediger varer</a>
+      <a href="logginn.html"><i class="fa-regular fa-user"></i> Logg inn</a>
+    </div>
+  </nav>
+  <hr>
+
+  <h2>Rediger varer</h2>
+
+  <div class="formContainer">
+
+    <form id="hentVare">
+      <label for="hentNavn">Navn:</label>
+      <input id="hentNavn" type="text">
+
+      <label for="menyVelger"></label>
+      <select id="menyVelger">
+        <option value="ukensMeny">Ukens meny</option>
+        <option value="øvrigeVarer">Øvrige varer</option>
+      </select> 
+
+      <button id="hentBtn">Hent</button>
+    </form>
+
+    <form id="leggTilVare">
+      <label for="menyVelgerR">Velg meny</label>
+      <select id="menyVelgerR">
+        <option value="ukensMeny">Ukens meny</option>
+        <option value="øvrigeVarer">Øvrige varer</option>
+      </select>
+
+      <label for="vareType">Type</label>
+      <select id="vareType">
+        <option value="mat">Mat</option>
+        <option value="drikke">Drikke</option>
+      </select>
+      
+      <label for="vareNavn">Navn:</label>
+      <input id="vareNavn" type="text" required>
+
+      <label for="varePris">Pris:</label>
+      <input id="varePris" type="text" required>
+
+      <label for="vareBeskrivelse">Beskrivelse:</label>
+      <textarea id="vareBeskrivelse"></textarea required>
+
+      <button id="addBtn">Legg til</button>
+    </form>
+
+  </div>
+
+  <script type="module" src="rediger.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css">
+  <title>Øvrige varer</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="left">
+      <a class="logo" href="index.html">Kantine</a>
+    </div>
+    <div class="right">
+      <a href="ukensmeny.html">Ukens meny</a>
+      <a href="øvrigevarer.html">Øvrige varer</a>
+      <a href="logginn.html"><i class="fa-regular fa-user"></i> Logg inn</a>
+    </div>
+  </nav>
+  <hr>
+
+  <h2>Øvrige varer</h2>
+
+
+  <div class="parentL">
+    <div class="matL">
+      <div class="underline"><h3>Matvarer</h3></div>
+      <li>Sjokoladekjeks <span>22Kr</span></li>
+      <li>Sjokoladebolle <span>29Kr</span></li>
+      <li>Skolebrød <span>30Kr</span></li>
+      <li>Italiensk Pizza <span>42Kr</span></li>
+      <li>Amerikansk Pizza <span>44Kr</span></li>
+      <li>Frukt Salat<span>23Kr</span></li>
+      <li>Pasta med Pesto <span>27Kr</span></li>
+    </div>
+
+    <div class="drikkeL">
+      <div class="underline"><h3>Drikkevarer</h3></div>
+      <li>Fanta <span>29Kr</span></li>
+      <li>Coca Cola <span>29Kr</span></li>
+      <li>Monster <span>31Kr</span></li>
+      <li>Redbull <span>35Kr</span></li>
+      <li>Dr. Pepper <span>29Kr</span></li>
+      <li>Vann <span>15Kr</span></li>
+      <li>Urge <span>29Kr</span></li>
+    </div>
+  </div>
+
+  <script type="module">
+    import { getFirestore, collection, getDocs, query, where } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-firestore.js";
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.0.2/firebase-app.js";
+
+    // Firebase config
+    const firebaseConfig = {
+      apiKey: "AIzaSyBu7Vuf_VMHXQMTPgGyIjj8JILDM6Qp4S4",
+      authDomain: "kantine-f25bd.firebaseapp.com",
+      projectId: "kantine-f25bd",
+      storageBucket: "kantine-f25bd.appspot.com",
+      messagingSenderId: "451585102997",
+      appId: "1:451585102997:web:4a2e0799f01d92f3bdf79c"
+    };
+
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    
+    
+
+  </script>
+</body>
+
+</html>
